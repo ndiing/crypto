@@ -1,6 +1,6 @@
 {
   "name": "@ndiing/crypto",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "nodejs and web cryptography module",
   "main": "index.js",
   "scripts": {
