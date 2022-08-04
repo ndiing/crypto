@@ -123,3 +123,4 @@ class Crypto {
 // console.log(Crypto.hmac("password", { key: "secret" }));
 
 module.exports = Crypto;
+// window.Crypto = Crypto;

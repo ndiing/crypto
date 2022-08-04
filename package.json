@@ -1,0 +1,26 @@
+{
+  "name": "@ndiing/crypto",
+  "version": "1.0.0",
+  "description": "nodejs and web cryptography module",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndiing/crypto.git"
+  },
+  "keywords": [
+    "nodejs",
+    "crypto",
+    "web"
+  ],
+  "author": "ndiing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ndiing/crypto/issues"
+  },
+  "homepage": "https://github.com/ndiing/crypto#readme",
+  "devDependencies": {
+  }
+}
