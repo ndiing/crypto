@@ -24,7 +24,6 @@ const crypto = require("crypto");
  * @param {String} options.iv -
  * @param {String} [options.encoding=hex] -
  * @returns {String}
- * @memberOf module:crypto
  */
 function encrypt(data, options = {}) {
     const { algorithm = "aes256", key = "", iv = "", chunk = data, encoding = "hex" } = options;
@@ -41,7 +40,6 @@ function encrypt(data, options = {}) {
  * @param {String} options.iv -
  * @param {String} [options.encoding=hex] -
  * @returns {String}
- * @memberOf module:crypto
  */
 function decrypt(data, options = {}) {
     const { algorithm = "aes256", key = "", iv = "", chunk = data, encoding = "hex" } = options;
@@ -56,7 +54,6 @@ function decrypt(data, options = {}) {
  * @param {String} options.privateKey -
  * @param {String} [options.encoding=hex] -
  * @returns {String}
- * @memberOf module:crypto
  */
 function privateEncrypt(data, options = {}) {
     const { privateKey = "", encoding = "hex" } = options;
@@ -70,7 +67,6 @@ function privateEncrypt(data, options = {}) {
  * @param {String} options.privateKey -
  * @param {String} [options.encoding=hex] -
  * @returns {String}
- * @memberOf module:crypto
  */
 function publicDecrypt(data, options = {}) {
     const { publicKey = "", encoding = "hex" } = options;
@@ -84,7 +80,6 @@ function publicDecrypt(data, options = {}) {
  * @param {String} options.privateKey -
  * @param {String} [options.encoding=hex] -
  * @returns {String}
- * @memberOf module:crypto
  */
 function publicEncrypt(data, options = {}) {
     const { publicKey = "", encoding = "hex" } = options;
@@ -98,7 +93,6 @@ function publicEncrypt(data, options = {}) {
  * @param {String} options.privateKey -
  * @param {String} [options.encoding=hex] -
  * @returns {String}
- * @memberOf module:crypto
  */
 function privateDecrypt(data, options = {}) {
     const { privateKey = "", encoding = "hex" } = options;
@@ -116,7 +110,6 @@ function privateDecrypt(data, options = {}) {
  * @param {String} [options.algorithm=sha256] -
  * @param {String} [options.encoding=hex] -
  * @returns {String}
- * @memberOf module:crypto
  */
 function sign(data, options = {}) {
     const { privateKey = "", algorithm = "sha256", encoding = "hex" } = options;
@@ -137,7 +130,6 @@ function sign(data, options = {}) {
  * @param {String} [options.algorithm=sha256] -
  * @param {String} [options.encoding=hex] -
  * @returns {String}
- * @memberOf module:crypto
  */
 function verify(data, signature, options = {}) {
     const { privateKey = "", algorithm = "sha256", encoding = "hex" } = options;
@@ -151,7 +143,6 @@ function verify(data, signature, options = {}) {
  * Base64 Encode
  * @param {String} data -
  * @returns {String}
- * @memberOf module:crypto
  */
 function base64Encode(data) {
     return Buffer.from(data).toString("base64");
@@ -161,7 +152,6 @@ function base64Encode(data) {
  * Base64 Decode
  * @param {String} data -
  * @returns {String}
- * @memberOf module:crypto
  */
 function base64Decode(data) {
     return Buffer.from(data, "base64").toString();
@@ -171,7 +161,6 @@ function base64Decode(data) {
  * Base64URL Encode
  * @param {String} data -
  * @returns {String}
- * @memberOf module:crypto
  */
 function base64UrlEncode(data) {
     return Buffer.from(data).toString("base64url");
@@ -181,7 +170,6 @@ function base64UrlEncode(data) {
  * Base64URL Decode
  * @param {String} data -
  * @returns {String}
- * @memberOf module:crypto
  */
 function base64UrlDecode(data) {
     return Buffer.from(data, "base64url").toString();
@@ -194,7 +182,6 @@ function base64UrlDecode(data) {
  * @param {String} [options.algorithm=sha256] -
  * @param {String} [options.encoding=hex] -
  * @returns {String}
- * @memberOf module:crypto
  */
 function hash(data, options = {}) {
     const { algorithm = "sha256", encoding = "hex" } = options;
@@ -209,7 +196,6 @@ function hash(data, options = {}) {
  * @param {String} options.key -
  * @param {String} [options.encoding=hex] -
  * @returns {String}
- * @memberOf module:crypto
  */
 function hmac(data, options = {}) {
     const { algorithm = "sha256", key = "", encoding = "hex" } = options;
