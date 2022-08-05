@@ -13,6 +13,8 @@ const crypto = require("crypto");
  * https://cdn.jsdelivr.net/gh/ndiing/crypto/crypto.js
  * ```
  * ### Usage
+ * 
+ * ```js
  * const Crypto = require('../index.js')
  *
  * var key = '40b48051b75df2e6b3d4ab1d47c12e3a'
@@ -128,6 +130,8 @@ const crypto = require("crypto");
  *
  * var hmaced = Crypto.hmac('data')
  * console.log(hmaced)
+ * ```
+ * 
  * @module crypto
  */
 
