@@ -33,7 +33,7 @@ function privateDecrypt(data, options = {}) {
 }
 
 function sign(data, options = {}) {
-    const { algorithm = "sha256", encoding = "hex" } = options;
+    const { privateKey = "", algorithm = "sha256", encoding = "hex" } = options;
     const buffer = crypto.createSign(algorithm);
     buffer.update(data);
     buffer.end();
@@ -41,7 +41,7 @@ function sign(data, options = {}) {
 }
 
 function verify(data, signature, options = {}) {
-    const { algorithm = "sha256", encoding = "hex" } = options;
+    const { privateKey = "", algorithm = "sha256", encoding = "hex" } = options;
     const buffer = crypto.createVerify(algorithm);
     buffer.update(data);
     buffer.end();
@@ -132,7 +132,7 @@ function hmac(data, options = {}) {
 // console.log(hash("password"));
 // console.log(hmac("password", { key: "secret" }));
 
-module.exports = {
+const Crypto = {
     encrypt,
     decrypt,
     privateEncrypt,
@@ -147,5 +147,6 @@ module.exports = {
     base64UrlDecode,
     hash,
     hmac,
-};
+}
+module.exports = Crypto;
 // window.Crypto = Crypto;
