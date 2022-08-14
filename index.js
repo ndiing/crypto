@@ -1,4 +1,6 @@
 const crypto = require("crypto");
+const base32Encode = require("base32-encode");
+const base32Decode = require("base32-decode");
 
 /**
  * ### Install
@@ -9,13 +11,13 @@ const crypto = require("crypto");
  */
 class Crypto {
     /**
-     * 
-     * @param {String} data 
-     * @param {Object} options 
-     * @param {String} options.algorithm=aes256 
-     * @param {String} options.key 
-     * @param {String} options.iv 
-     * @param {String} options.encoding=hex 
+     *
+     * @param {String} data
+     * @param {Object} options
+     * @param {String} options.algorithm=aes256
+     * @param {String} options.key
+     * @param {String} options.iv
+     * @param {String} options.encoding=hex
      * @returns {String}
      */
     static encrypt(data, options = {}) {
@@ -25,13 +27,13 @@ class Crypto {
     }
 
     /**
-     * 
-     * @param {String} data 
-     * @param {Object} options 
-     * @param {String} options.algorithm=aes256 
-     * @param {String} options.key 
-     * @param {String} options.iv 
-     * @param {String} options.encoding=hex 
+     *
+     * @param {String} data
+     * @param {Object} options
+     * @param {String} options.algorithm=aes256
+     * @param {String} options.key
+     * @param {String} options.iv
+     * @param {String} options.encoding=hex
      * @returns {String}
      */
     static decrypt(data, options = {}) {
@@ -41,11 +43,11 @@ class Crypto {
     }
 
     /**
-     * 
-     * @param {String} data 
-     * @param {Object} options 
-     * @param {String} options.privateKey 
-     * @param {String} options.encoding=hex 
+     *
+     * @param {String} data
+     * @param {Object} options
+     * @param {String} options.privateKey
+     * @param {String} options.encoding=hex
      * @returns {String}
      */
     static privateEncrypt(data, options = {}) {
@@ -55,11 +57,11 @@ class Crypto {
     }
 
     /**
-     * 
-     * @param {String} data 
-     * @param {Object} options 
-     * @param {String} options.publicKey 
-     * @param {String} options.encoding=hex 
+     *
+     * @param {String} data
+     * @param {Object} options
+     * @param {String} options.publicKey
+     * @param {String} options.encoding=hex
      * @returns {String}
      */
     static publicDecrypt(data, options = {}) {
@@ -69,11 +71,11 @@ class Crypto {
     }
 
     /**
-     * 
-     * @param {String} data 
-     * @param {Object} options 
-     * @param {String} options.publicKey 
-     * @param {String} options.encoding=hex 
+     *
+     * @param {String} data
+     * @param {Object} options
+     * @param {String} options.publicKey
+     * @param {String} options.encoding=hex
      * @returns {String}
      */
     static publicEncrypt(data, options = {}) {
@@ -83,11 +85,11 @@ class Crypto {
     }
 
     /**
-     * 
-     * @param {String} data 
-     * @param {Object} options 
-     * @param {String} options.privateKey 
-     * @param {String} options.encoding=hex 
+     *
+     * @param {String} data
+     * @param {Object} options
+     * @param {String} options.privateKey
+     * @param {String} options.encoding=hex
      * @returns {String}
      */
     static privateDecrypt(data, options = {}) {
@@ -97,16 +99,16 @@ class Crypto {
     }
 
     /**
-     * 
-     * @param {String} data 
-     * @param {Object} options 
-     * @param {String} options.algorithm=sha256 
-     * @param {String/Object} options.privateKey 
-     * @param {String} options.privateKey.key 
-     * @param {String} options.privateKey.padding 
-     * @param {String} options.privateKey.saltLength 
-     * @param {String} options.privateKey.dsaEncoding 
-     * @param {String} options.encoding=hex 
+     *
+     * @param {String} data
+     * @param {Object} options
+     * @param {String} options.algorithm=sha256
+     * @param {String/Object} options.privateKey
+     * @param {String} options.privateKey.key
+     * @param {String} options.privateKey.padding
+     * @param {String} options.privateKey.saltLength
+     * @param {String} options.privateKey.dsaEncoding
+     * @param {String} options.encoding=hex
      * @returns {String}
      */
     static sign(data, options = {}) {
@@ -118,17 +120,17 @@ class Crypto {
     }
 
     /**
-     * 
-     * @param {String} data 
-     * @param {String} signature 
-     * @param {Object} options 
-     * @param {String} options.algorithm=sha256 
-     * @param {String/Object} options.privateKey 
-     * @param {String} options.privateKey.key 
-     * @param {String} options.privateKey.padding 
-     * @param {String} options.privateKey.saltLength 
-     * @param {String} options.privateKey.dsaEncoding 
-     * @param {String} options.encoding=hex 
+     *
+     * @param {String} data
+     * @param {String} signature
+     * @param {Object} options
+     * @param {String} options.algorithm=sha256
+     * @param {String/Object} options.privateKey
+     * @param {String} options.privateKey.key
+     * @param {String} options.privateKey.padding
+     * @param {String} options.privateKey.saltLength
+     * @param {String} options.privateKey.dsaEncoding
+     * @param {String} options.encoding=hex
      * @returns {String}
      */
     static verify(data, signature, options = {}) {
@@ -140,8 +142,8 @@ class Crypto {
     }
 
     /**
-     * 
-     * @param {String} data 
+     *
+     * @param {String} data
      * @returns {String}
      */
     static base64Encode(data) {
@@ -149,8 +151,8 @@ class Crypto {
     }
 
     /**
-     * 
-     * @param {String} data 
+     *
+     * @param {String} data
      * @returns {String}
      */
     static base64Decode(data) {
@@ -158,8 +160,8 @@ class Crypto {
     }
 
     /**
-     * 
-     * @param {String} data 
+     *
+     * @param {String} data
      * @returns {String}
      */
     static base64UrlEncode(data) {
@@ -167,8 +169,8 @@ class Crypto {
     }
 
     /**
-     * 
-     * @param {String} data 
+     *
+     * @param {String} data
      * @returns {String}
      */
     static base64UrlDecode(data) {
@@ -176,11 +178,11 @@ class Crypto {
     }
 
     /**
-     * 
-     * @param {String} data 
-     * @param {Object} options 
-     * @param {String} options.algorithm=sha256 
-     * @param {String} options.encoding=hex 
+     *
+     * @param {String} data
+     * @param {Object} options
+     * @param {String} options.algorithm=sha256
+     * @param {String} options.encoding=hex
      * @returns {String}
      */
     static hash(data, options = {}) {
@@ -189,12 +191,12 @@ class Crypto {
     }
 
     /**
-     * 
-     * @param {String} data 
-     * @param {Object} options 
-     * @param {String} options.algorithm=sha256 
-     * @param {String} options.key 
-     * @param {String} options.encoding=hex 
+     *
+     * @param {String} data
+     * @param {Object} options
+     * @param {String} options.algorithm=sha256
+     * @param {String} options.key
+     * @param {String} options.encoding=hex
      * @returns {String}
      */
     static hmac(data, options = {}) {
@@ -202,6 +204,20 @@ class Crypto {
         return crypto.createHmac(algorithm, key).update(data).digest(encoding);
     }
 }
+
+/**
+ * @param {String} input
+ * @param {String} variant - `RFC3548`,`RFC4648`,`RFC4648-HEX`,`Crockford`
+ * @method base32Encode
+ */
+Crypto.base32Encode = (input, variant = "RFC4648") => base32Encode(input, variant);
+
+/**
+ * @param {String} input
+ * @param {String} variant - `RFC3548`,`RFC4648`,`RFC4648-HEX`,`Crockford`
+ * @method base32Decode
+ */
+Crypto.base32Decode = (input, variant = "RFC4648") => base32Decode(input, variant);
 
 module.exports = Crypto;
 
