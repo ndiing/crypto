@@ -21,6 +21,8 @@
     * [.base64UrlDecode(data)](#Crypto.base64UrlDecode) ⇒ <code>String</code>
     * [.hash(data, options)](#Crypto.hash) ⇒ <code>String</code>
     * [.hmac(data, options)](#Crypto.hmac) ⇒ <code>String</code>
+    * [.base32Encode(data, variant)](#Crypto.base32Encode) ⇒ <code>String</code>
+    * [.base32Decode(input, variant)](#Crypto.base32Decode) ⇒ <code>String</code>
 
 <a name="Crypto.encrypt"></a>
 
@@ -193,4 +195,24 @@
 | options.algorithm | <code>String</code> | <code>sha256</code> | 
 | options.key | <code>String</code> |  | 
 | options.encoding | <code>String</code> | <code>hex</code> | 
+
+<a name="Crypto.base32Encode"></a>
+
+### Crypto.base32Encode(data, variant) ⇒ <code>String</code>
+**Kind**: static method of [<code>Crypto</code>](#Crypto)  
+
+| Param | Type |
+| --- | --- |
+| data | <code>String</code> | 
+| variant | <code>String</code> | 
+
+<a name="Crypto.base32Decode"></a>
+
+### Crypto.base32Decode(input, variant) ⇒ <code>String</code>
+**Kind**: static method of [<code>Crypto</code>](#Crypto)  
+
+| Param | Type |
+| --- | --- |
+| input | <code>String</code> | 
+| variant | <code>String</code> | 
 
