@@ -20,8 +20,5 @@
     "url": "https://github.com/ndiing/crypto/issues"
   },
   "homepage": "https://github.com/ndiing/crypto#readme",
-  "dependencies": {
-    "base32-decode": "^1.0.0",
-    "base32-encode": "^2.0.0"
-  }
+  "dependencies": {}
 }
