@@ -348,5 +348,3 @@ class Crypto {
 module.exports = Crypto;
 
 // jsdoc2md crypto/index.js > crypto/README.md
-
-console.log(Crypto.base32Decode(Crypto.base32Encode("data")));
