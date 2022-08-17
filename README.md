@@ -1,4 +1,4 @@
-# crypto
+# [crypto](https://ndiing.github.io/crypto/)
 crypto
 
 ### Install
