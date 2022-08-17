@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Crypto.html">Crypto</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Crypto.html#.base32Decode">base32Decode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Crypto.html#.base32Encode">base32Encode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Crypto.html#.base64Decode">base64Decode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Crypto.html#.base64Encode">base64Encode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Crypto.html#.base64UrlDecode">base64UrlDecode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Crypto.html#.base64UrlEncode">base64UrlEncode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Crypto.html#.decrypt">decrypt</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Crypto.html#.encrypt">encrypt</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Crypto.html#.hash">hash</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Crypto.html#.hmac">hmac</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Crypto.html#.privateDecrypt">privateDecrypt</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Crypto.html#.privateEncrypt">privateEncrypt</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Crypto.html#.publicDecrypt">publicDecrypt</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Crypto.html#.publicEncrypt">publicEncrypt</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Crypto.html#.sign">sign</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Crypto.html#.verify">verify</a></span></li>
+</nav>
+
+<div id="main">
+    
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+    <section class="readme">
+        <article><h1>crypto</h1>
+<p>crypto</p>
+<h3>Install</h3>
+<pre class="prettyprint source"><code>npm install @ndiinginc/crypto
+</code></pre>
+<h3>Usage</h3>
+<pre class="prettyprint source lang-js"><code>
+const Crypto = require('@ndiinginc/crypto')
+
+var options = {
+    key: crypto.randomBytes(16).toString(&quot;hex&quot;),
+    iv: crypto.randomBytes(8).toString(&quot;hex&quot;),
+};
+
+var encoded = Crypto.encrypt(&quot;data&quot;, options);
+console.log(encoded);
+var decoded = Crypto.decrypt(encoded, options);
+console.log(decoded);
+
+var options = crypto.generateKeyPairSync(&quot;rsa&quot;, {
+    modulusLength: 4096,
+    publicKeyEncoding: {
+        type: &quot;spki&quot;,
+        format: &quot;pem&quot;,
+    },
+    privateKeyEncoding: {
+        type: &quot;pkcs8&quot;,
+        format: &quot;pem&quot;,
+    },
+});
+
+var encoded = Crypto.privateEncrypt(&quot;data&quot;, options);
+console.log(encoded);
+var decoded = Crypto.publicDecrypt(encoded, options);
+console.log(decoded);
+
+var encoded = Crypto.publicEncrypt(&quot;data&quot;, options);
+console.log(encoded);
+var decoded = Crypto.privateDecrypt(encoded, options);
+console.log(decoded);
+
+var sign = Crypto.sign(&quot;data&quot;, options);
+console.log(sign);
+var verify = Crypto.verify(&quot;data&quot;, sign, options);
+console.log(verify);
+
+var encoded = Crypto.base64Encode(&quot;data&quot;);
+console.log(encoded);
+var decoded = Crypto.base64Decode(encoded);
+console.log(decoded);
+
+var encoded = Crypto.base64UrlEncode(&quot;data&quot;);
+console.log(encoded);
+var decoded = Crypto.base64UrlDecode(encoded);
+console.log(decoded);
+
+var encoded = Crypto.base32Encode(&quot;data&quot;);
+console.log(encoded);
+var decoded = Crypto.base32Decode(encoded);
+console.log(decoded);
+
+var hash = Crypto.hash(&quot;data&quot;);
+console.log(hash);
+var hmac = Crypto.hmac(&quot;data&quot;);
+console.log(hmac);
+
+</code></pre></article>
+    </section>
+
+
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a> on Wed Aug 17 2022 12:21:01 GMT+0700 (Western Indonesia Time) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
