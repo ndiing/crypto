@@ -1,71 +1,79 @@
-# [crypto](https://ndiing.github.io/crypto/)
-crypto
+# Crypto
 
-### Install
-```
-npm install @ndiinginc/crypto
-```
+Description
 
-### Usage
-```js
+## [Methods]()
 
-const Crypto = require('@ndiinginc/crypto')
+_Description_
 
-var options = {
-    key: crypto.randomBytes(16).toString("hex"),
-    iv: crypto.randomBytes(8).toString("hex"),
-};
+[`Crypto.encrypt()`]()
 
-var encoded = Crypto.encrypt("data", options);
-console.log(encoded);
-var decoded = Crypto.decrypt(encoded, options);
-console.log(decoded);
+Description
 
-var options = crypto.generateKeyPairSync("rsa", {
-    modulusLength: 4096,
-    publicKeyEncoding: {
-        type: "spki",
-        format: "pem",
-    },
-    privateKeyEncoding: {
-        type: "pkcs8",
-        format: "pem",
-    },
-});
+[`Crypto.decrypt()`]()
 
-var encoded = Crypto.privateEncrypt("data", options);
-console.log(encoded);
-var decoded = Crypto.publicDecrypt(encoded, options);
-console.log(decoded);
+Description
 
-var encoded = Crypto.publicEncrypt("data", options);
-console.log(encoded);
-var decoded = Crypto.privateDecrypt(encoded, options);
-console.log(decoded);
+[`Crypto.privateEncrypt()`]()
 
-var sign = Crypto.sign("data", options);
-console.log(sign);
-var verify = Crypto.verify("data", sign, options);
-console.log(verify);
+Description
 
-var encoded = Crypto.base64Encode("data");
-console.log(encoded);
-var decoded = Crypto.base64Decode(encoded);
-console.log(decoded);
+[`Crypto.privateDecrypt()`]()
 
-var encoded = Crypto.base64UrlEncode("data");
-console.log(encoded);
-var decoded = Crypto.base64UrlDecode(encoded);
-console.log(decoded);
+Description
 
-var encoded = Crypto.base32Encode("data");
-console.log(encoded);
-var decoded = Crypto.base32Decode(encoded);
-console.log(decoded);
+[`Crypto.publicEncrypt()`]()
 
-var hash = Crypto.hash("data");
-console.log(hash);
-var hmac = Crypto.hmac("data");
-console.log(hmac);
+Description
 
-```
+[`Crypto.publicDecrypt()`]()
+
+Description
+
+[`Crypto.sign()`]()
+
+Description
+
+[`Crypto.verify()`]()
+
+Description
+
+[`Crypto.hash()`]()
+
+Description
+
+[`Crypto.hmac()`]()
+
+Description
+
+[`Crypto.base64Encode()`]()
+
+Description
+
+[`Crypto.base64Decode()`]()
+
+Description
+
+[`Crypto.base64UrlEncode()`]()
+
+Description
+
+[`Crypto.base64UrlDecode()`]()
+
+Description
+
+[`Crypto.base32Encode()`]()
+
+Description
+
+[`Crypto.base32Decode()`]()
+
+Description
+
+# Global
+
+Description
+
+## [See also]()
+
+-   See also
