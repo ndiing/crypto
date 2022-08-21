@@ -1,239 +1,343 @@
-<a name="Crypto"></a>
 
-## Crypto
-Cryptography
+# Crypto
 
-**Kind**: global class  
 
-* [Crypto](#Crypto)
-    * [.encrypt(data, options)](#Crypto.encrypt) ⇒ <code>String</code>
-    * [.decrypt(data, options)](#Crypto.decrypt) ⇒ <code>String</code>
-    * [.privateEncrypt(data, options)](#Crypto.privateEncrypt) ⇒ <code>String</code>
-    * [.privateDecrypt(data, options)](#Crypto.privateDecrypt) ⇒ <code>String</code>
-    * [.publicEncrypt(data, options)](#Crypto.publicEncrypt) ⇒ <code>String</code>
-    * [.publicDecrypt(data, options)](#Crypto.publicDecrypt) ⇒ <code>String</code>
-    * [.sign(data, options)](#Crypto.sign) ⇒ <code>String</code>
-    * [.verify(data, signature, options)](#Crypto.verify) ⇒ <code>String</code>
-    * [.hash(data, options)](#Crypto.hash) ⇒ <code>String</code>
-    * [.hmac(data, options)](#Crypto.hmac) ⇒ <code>String</code>
-    * [.base64Encode(data)](#Crypto.base64Encode) ⇒ <code>String</code>
-    * [.base64Decode(data)](#Crypto.base64Decode) ⇒ <code>String</code>
-    * [.base64UrlEncode(data)](#Crypto.base64UrlEncode) ⇒ <code>String</code>
-    * [.base64UrlDecode(data)](#Crypto.base64UrlDecode) ⇒ <code>String</code>
-    * [.base32Encode(data)](#Crypto.base32Encode) ⇒ <code>String</code>
-    * [.base32Decode(data)](#Crypto.base32Decode) ⇒ <code>String</code>
 
-<a name="Crypto.encrypt"></a>
 
-### Crypto.encrypt(data, options) ⇒ <code>String</code>
+
+## [Methods]()
+
+<!-- _Methods._ -->
+
+
+### Crypto.encrypt()
+
 AES Encryption
 
-**Kind**: static method of [<code>Crypto</code>](#Crypto)  
+#### [Syntax]()
 
-| Param | Type | Default |
-| --- | --- | --- |
-| data | <code>String</code> |  | 
-| options | <code>Object</code> |  | 
-| options.algorithm | <code>String</code> | <code>aes256</code> | 
-| options.key | <code>String</code> |  | 
-| options.iv | <code>String</code> |  | 
-| options.encoding | <code>String</code> | <code>hex</code> | 
+    encrypt(data,options)
 
-<a name="Crypto.decrypt"></a>
+##### [Parameters]()
 
-### Crypto.decrypt(data, options) ⇒ <code>String</code>
+name|type|defaultvalue
+---|---|---
+data|`String`|
+options|`Object`|
+options.algorithm|`String`|aes256
+options.key|`String`|
+options.iv|`String`|
+options.encoding|`String`|hex
+
+##### [Return value]()
+
+`String`
+
+### Crypto.decrypt()
+
 AES Decryption
 
-**Kind**: static method of [<code>Crypto</code>](#Crypto)  
+#### [Syntax]()
 
-| Param | Type | Default |
-| --- | --- | --- |
-| data | <code>String</code> |  | 
-| options | <code>Object</code> |  | 
-| options.algorithm | <code>String</code> | <code>aes256</code> | 
-| options.key | <code>String</code> |  | 
-| options.iv | <code>String</code> |  | 
-| options.encoding | <code>String</code> | <code>hex</code> | 
+    decrypt(data,options)
 
-<a name="Crypto.privateEncrypt"></a>
+##### [Parameters]()
 
-### Crypto.privateEncrypt(data, options) ⇒ <code>String</code>
+name|type|defaultvalue
+---|---|---
+data|`String`|
+options|`Object`|
+options.algorithm|`String`|aes256
+options.key|`String`|
+options.iv|`String`|
+options.encoding|`String`|hex
+
+##### [Return value]()
+
+`String`
+
+### Crypto.privateEncrypt()
+
 RSA Private Encryption
 
-**Kind**: static method of [<code>Crypto</code>](#Crypto)  
+#### [Syntax]()
 
-| Param | Type | Default |
-| --- | --- | --- |
-| data | <code>String</code> |  | 
-| options | <code>Object</code> |  | 
-| options.privateKey | <code>String</code> |  | 
-| options.encoding | <code>String</code> | <code>hex</code> | 
+    privateEncrypt(data,options)
 
-<a name="Crypto.privateDecrypt"></a>
+##### [Parameters]()
 
-### Crypto.privateDecrypt(data, options) ⇒ <code>String</code>
+name|type|defaultvalue
+---|---|---
+data|`String`|
+options|`Object`|
+options.privateKey|`String`|
+options.encoding|`String`|hex
+
+##### [Return value]()
+
+`String`
+
+### Crypto.privateDecrypt()
+
 RSA Private Decryption
 
-**Kind**: static method of [<code>Crypto</code>](#Crypto)  
+#### [Syntax]()
 
-| Param | Type | Default |
-| --- | --- | --- |
-| data | <code>String</code> |  | 
-| options | <code>Object</code> |  | 
-| options.privateKey | <code>String</code> |  | 
-| options.encoding | <code>String</code> | <code>hex</code> | 
+    privateDecrypt(data,options)
 
-<a name="Crypto.publicEncrypt"></a>
+##### [Parameters]()
 
-### Crypto.publicEncrypt(data, options) ⇒ <code>String</code>
+name|type|defaultvalue
+---|---|---
+data|`String`|
+options|`Object`|
+options.privateKey|`String`|
+options.encoding|`String`|hex
+
+##### [Return value]()
+
+`String`
+
+### Crypto.publicEncrypt()
+
 RSA Public Encryption
 
-**Kind**: static method of [<code>Crypto</code>](#Crypto)  
+#### [Syntax]()
 
-| Param | Type | Default |
-| --- | --- | --- |
-| data | <code>String</code> |  | 
-| options | <code>Object</code> |  | 
-| options.privateKey | <code>String</code> |  | 
-| options.encoding | <code>String</code> | <code>hex</code> | 
+    publicEncrypt(data,options)
 
-<a name="Crypto.publicDecrypt"></a>
+##### [Parameters]()
 
-### Crypto.publicDecrypt(data, options) ⇒ <code>String</code>
+name|type|defaultvalue
+---|---|---
+data|`String`|
+options|`Object`|
+options.privateKey|`String`|
+options.encoding|`String`|hex
+
+##### [Return value]()
+
+`String`
+
+### Crypto.publicDecrypt()
+
 RSA Public Decryption
 
-**Kind**: static method of [<code>Crypto</code>](#Crypto)  
+#### [Syntax]()
 
-| Param | Type | Default |
-| --- | --- | --- |
-| data | <code>String</code> |  | 
-| options | <code>Object</code> |  | 
-| options.privateKey | <code>String</code> |  | 
-| options.encoding | <code>String</code> | <code>hex</code> | 
+    publicDecrypt(data,options)
 
-<a name="Crypto.sign"></a>
+##### [Parameters]()
 
-### Crypto.sign(data, options) ⇒ <code>String</code>
+name|type|defaultvalue
+---|---|---
+data|`String`|
+options|`Object`|
+options.privateKey|`String`|
+options.encoding|`String`|hex
+
+##### [Return value]()
+
+`String`
+
+### Crypto.sign()
+
 Create Signature
 
-**Kind**: static method of [<code>Crypto</code>](#Crypto)  
+#### [Syntax]()
 
-| Param | Type | Default |
-| --- | --- | --- |
-| data | <code>String</code> |  | 
-| options | <code>Object</code> |  | 
-| options.algorithm | <code>String</code> | <code>sha256</code> | 
-| options.privateKey | <code>String</code> |  | 
-| options.encoding | <code>String</code> | <code>hex</code> | 
+    sign(data,options)
 
-<a name="Crypto.verify"></a>
+##### [Parameters]()
 
-### Crypto.verify(data, signature, options) ⇒ <code>String</code>
+name|type|defaultvalue
+---|---|---
+data|`String`|
+options|`Object`|
+options.algorithm|`String`|sha256
+options.privateKey|`String`|
+options.encoding|`String`|hex
+
+##### [Return value]()
+
+`String`
+
+### Crypto.verify()
+
 Verify Signature
 
-**Kind**: static method of [<code>Crypto</code>](#Crypto)  
+#### [Syntax]()
 
-| Param | Type | Default |
-| --- | --- | --- |
-| data | <code>String</code> |  | 
-| signature | <code>String</code> |  | 
-| options | <code>Object</code> |  | 
-| options.algorithm | <code>String</code> | <code>sha256</code> | 
-| options.privateKey | <code>String</code> |  | 
-| options.encoding | <code>String</code> | <code>hex</code> | 
+    verify(data,signature,options)
 
-<a name="Crypto.hash"></a>
+##### [Parameters]()
 
-### Crypto.hash(data, options) ⇒ <code>String</code>
+name|type|defaultvalue
+---|---|---
+data|`String`|
+signature|`String`|
+options|`Object`|
+options.algorithm|`String`|sha256
+options.privateKey|`String`|
+options.encoding|`String`|hex
+
+##### [Return value]()
+
+`String`
+
+### Crypto.hash()
+
 HASH
 
-**Kind**: static method of [<code>Crypto</code>](#Crypto)  
+#### [Syntax]()
 
-| Param | Type | Default |
-| --- | --- | --- |
-| data | <code>String</code> |  | 
-| options | <code>Object</code> |  | 
-| options.algorithm | <code>String</code> | <code>sha256</code> | 
-| options.encoding | <code>String</code> | <code>hex</code> | 
+    hash(data,options)
 
-<a name="Crypto.hmac"></a>
+##### [Parameters]()
 
-### Crypto.hmac(data, options) ⇒ <code>String</code>
+name|type|defaultvalue
+---|---|---
+data|`String`|
+options|`Object`|
+options.algorithm|`String`|sha256
+options.encoding|`String`|hex
+
+##### [Return value]()
+
+`String`
+
+### Crypto.hmac()
+
 HMAC
 
-**Kind**: static method of [<code>Crypto</code>](#Crypto)  
+#### [Syntax]()
 
-| Param | Type | Default |
-| --- | --- | --- |
-| data | <code>String</code> |  | 
-| options | <code>Object</code> |  | 
-| options.algorithm | <code>String</code> | <code>sha256</code> | 
-| options.key | <code>String</code> |  | 
-| options.encoding | <code>String</code> | <code>hex</code> | 
+    hmac(data,options)
 
-<a name="Crypto.base64Encode"></a>
+##### [Parameters]()
 
-### Crypto.base64Encode(data) ⇒ <code>String</code>
+name|type|defaultvalue
+---|---|---
+data|`String`|
+options|`Object`|
+options.algorithm|`String`|sha256
+options.key|`String`|
+options.encoding|`String`|hex
+
+##### [Return value]()
+
+`String`
+
+### Crypto.base64Encode()
+
 Base64 Encode
 
-**Kind**: static method of [<code>Crypto</code>](#Crypto)  
+#### [Syntax]()
 
-| Param | Type |
-| --- | --- |
-| data | <code>String</code> | 
+    base64Encode(data)
 
-<a name="Crypto.base64Decode"></a>
+##### [Parameters]()
 
-### Crypto.base64Decode(data) ⇒ <code>String</code>
+name|type|defaultvalue
+---|---|---
+data|`String`|
+
+##### [Return value]()
+
+`String`
+
+### Crypto.base64Decode()
+
 Base64 Decode
 
-**Kind**: static method of [<code>Crypto</code>](#Crypto)  
+#### [Syntax]()
 
-| Param | Type |
-| --- | --- |
-| data | <code>String</code> | 
+    base64Decode(data)
 
-<a name="Crypto.base64UrlEncode"></a>
+##### [Parameters]()
 
-### Crypto.base64UrlEncode(data) ⇒ <code>String</code>
+name|type|defaultvalue
+---|---|---
+data|`String`|
+
+##### [Return value]()
+
+`String`
+
+### Crypto.base64UrlEncode()
+
 Base64URL Encode
 
-**Kind**: static method of [<code>Crypto</code>](#Crypto)  
+#### [Syntax]()
 
-| Param | Type |
-| --- | --- |
-| data | <code>String</code> | 
+    base64UrlEncode(data)
 
-<a name="Crypto.base64UrlDecode"></a>
+##### [Parameters]()
 
-### Crypto.base64UrlDecode(data) ⇒ <code>String</code>
+name|type|defaultvalue
+---|---|---
+data|`String`|
+
+##### [Return value]()
+
+`String`
+
+### Crypto.base64UrlDecode()
+
 Base64URL Decode
 
-**Kind**: static method of [<code>Crypto</code>](#Crypto)  
+#### [Syntax]()
 
-| Param | Type |
-| --- | --- |
-| data | <code>String</code> | 
+    base64UrlDecode(data)
 
-<a name="Crypto.base32Encode"></a>
+##### [Parameters]()
 
-### Crypto.base32Encode(data) ⇒ <code>String</code>
+name|type|defaultvalue
+---|---|---
+data|`String`|
+
+##### [Return value]()
+
+`String`
+
+### Crypto.base32Encode()
+
 Base32 Encode
 
-**Kind**: static method of [<code>Crypto</code>](#Crypto)  
+#### [Syntax]()
 
-| Param | Type |
-| --- | --- |
-| data | <code>String</code> | 
+    base32Encode(data)
 
-<a name="Crypto.base32Decode"></a>
+##### [Parameters]()
 
-### Crypto.base32Decode(data) ⇒ <code>String</code>
+name|type|defaultvalue
+---|---|---
+data|`String`|
+
+##### [Return value]()
+
+`String`
+
+### Crypto.base32Decode()
+
 Base32 Decode
 
-**Kind**: static method of [<code>Crypto</code>](#Crypto)  
+#### [Syntax]()
 
-| Param | Type |
-| --- | --- |
-| data | <code>String</code> | 
+    base32Decode(data)
+
+##### [Parameters]()
+
+name|type|defaultvalue
+---|---|---
+data|`String`|
+
+##### [Return value]()
+
+`String`
+
+# 
+
+
+
 
