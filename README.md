@@ -1,6 +1,10 @@
 # Crypto
 
-## [Methods]()
+## [Properties]()
+
+[`Crypto.base32Alphabet`]()
+
+## [Static methods]()
 
 [`Crypto.encrypt()`]()
 
@@ -34,8 +38,6 @@
 
 [`Crypto.base32Decode()`]()
 
-# Global
-
 ## [See also]()
 
--   See also
+-   [`link`]()
