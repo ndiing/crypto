@@ -1,6 +1,6 @@
 # Crypto
 
-<!-- Description -->
+Description
 
 
 
@@ -9,56 +9,56 @@
 
 ## [Static methods]()
 
-<!-- _Description_ -->
+_Description_
 
-[`encrypt()`]()
+[`encrypt()`](./docs/encrypt.md)
 
-<!-- Description -->
-[`decrypt()`]()
 
-<!-- Description -->
-[`privateEncrypt()`]()
+[`decrypt()`](./docs/decrypt.md)
 
-<!-- Description -->
-[`privateDecrypt()`]()
 
-<!-- Description -->
-[`publicEncrypt()`]()
+[`privateEncrypt()`](./docs/private-encrypt.md)
 
-<!-- Description -->
-[`publicDecrypt()`]()
 
-<!-- Description -->
-[`sign()`]()
+[`privateDecrypt()`](./docs/private-decrypt.md)
 
-<!-- Description -->
-[`verify()`]()
 
-<!-- Description -->
-[`hash()`]()
+[`publicEncrypt()`](./docs/public-encrypt.md)
 
-<!-- Description -->
-[`hmac()`]()
 
-<!-- Description -->
-[`base64Encode()`]()
+[`publicDecrypt()`](./docs/public-decrypt.md)
 
-<!-- Description -->
-[`base64Decode()`]()
 
-<!-- Description -->
-[`base64UrlEncode()`]()
+[`sign()`](./docs/sign.md)
 
-<!-- Description -->
-[`base64UrlDecode()`]()
 
-<!-- Description -->
-[`base32Encode()`]()
+[`verify()`](./docs/verify.md)
 
-<!-- Description -->
-[`base32Decode()`]()
 
-<!-- Description -->
+[`hash()`](./docs/hash.md)
+
+
+[`hmac()`](./docs/hmac.md)
+
+
+[`base64Encode()`](./docs/base64encode.md)
+
+
+[`base64Decode()`](./docs/base64decode.md)
+
+
+[`base64UrlEncode()`](./docs/base64url-encode.md)
+
+
+[`base64UrlDecode()`](./docs/base64url-decode.md)
+
+
+[`base32Encode()`](./docs/base32encode.md)
+
+
+[`base32Decode()`](./docs/base32decode.md)
+
+
 
 
 <!-- ## [Events]() -->
@@ -69,11 +69,13 @@
 <!--  -->
 <!-- Description -->
 <!--  -->
+
 <!-- ## [Example]() -->
 <!--  -->
 <!-- ### [Title]() -->
 <!--  -->
 <!-- Description -->
+
 
 ## [See also]()
 
