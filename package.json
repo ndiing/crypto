@@ -1,7 +1,7 @@
 {
   "name": "@ndiinginc/crypto",
   "version": "1.0.1",
-  "description": "nodejs crypto",
+  "description": "Nodejs cryptography module",
   "main": "index.js",
   "scripts": {
     "test": "exit 0"
@@ -11,8 +11,7 @@
     "url": "git+https://github.com/ndiing/crypto.git"
   },
   "keywords": [
-    "nodejs",
-    "cypto"
+    "crypto"
   ],
   "author": "ndiing",
   "license": "MIT",
