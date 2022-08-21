@@ -10,15 +10,15 @@
 <!-- _Methods._ -->
 
 
-### Crypto.encrypt()
+## Crypto.encrypt()
 
 AES Encryption
 
-#### [Syntax]()
+### [Syntax]()
 
     encrypt(data,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
@@ -29,19 +29,19 @@ options.key|`String`|
 options.iv|`String`|
 options.encoding|`String`|hex
 
-##### [Return value]()
+#### [Return value]()
 
 `String`
 
-### Crypto.decrypt()
+## Crypto.decrypt()
 
 AES Decryption
 
-#### [Syntax]()
+### [Syntax]()
 
     decrypt(data,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
@@ -52,19 +52,19 @@ options.key|`String`|
 options.iv|`String`|
 options.encoding|`String`|hex
 
-##### [Return value]()
+#### [Return value]()
 
 `String`
 
-### Crypto.privateEncrypt()
+## Crypto.privateEncrypt()
 
 RSA Private Encryption
 
-#### [Syntax]()
+### [Syntax]()
 
     privateEncrypt(data,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
@@ -73,19 +73,19 @@ options|`Object`|
 options.privateKey|`String`|
 options.encoding|`String`|hex
 
-##### [Return value]()
+#### [Return value]()
 
 `String`
 
-### Crypto.privateDecrypt()
+## Crypto.privateDecrypt()
 
 RSA Private Decryption
 
-#### [Syntax]()
+### [Syntax]()
 
     privateDecrypt(data,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
@@ -94,19 +94,19 @@ options|`Object`|
 options.privateKey|`String`|
 options.encoding|`String`|hex
 
-##### [Return value]()
+#### [Return value]()
 
 `String`
 
-### Crypto.publicEncrypt()
+## Crypto.publicEncrypt()
 
 RSA Public Encryption
 
-#### [Syntax]()
+### [Syntax]()
 
     publicEncrypt(data,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
@@ -115,19 +115,19 @@ options|`Object`|
 options.privateKey|`String`|
 options.encoding|`String`|hex
 
-##### [Return value]()
+#### [Return value]()
 
 `String`
 
-### Crypto.publicDecrypt()
+## Crypto.publicDecrypt()
 
 RSA Public Decryption
 
-#### [Syntax]()
+### [Syntax]()
 
     publicDecrypt(data,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
@@ -136,19 +136,19 @@ options|`Object`|
 options.privateKey|`String`|
 options.encoding|`String`|hex
 
-##### [Return value]()
+#### [Return value]()
 
 `String`
 
-### Crypto.sign()
+## Crypto.sign()
 
 Create Signature
 
-#### [Syntax]()
+### [Syntax]()
 
     sign(data,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
@@ -158,19 +158,19 @@ options.algorithm|`String`|sha256
 options.privateKey|`String`|
 options.encoding|`String`|hex
 
-##### [Return value]()
+#### [Return value]()
 
 `String`
 
-### Crypto.verify()
+## Crypto.verify()
 
 Verify Signature
 
-#### [Syntax]()
+### [Syntax]()
 
     verify(data,signature,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
@@ -181,19 +181,19 @@ options.algorithm|`String`|sha256
 options.privateKey|`String`|
 options.encoding|`String`|hex
 
-##### [Return value]()
+#### [Return value]()
 
 `String`
 
-### Crypto.hash()
+## Crypto.hash()
 
 HASH
 
-#### [Syntax]()
+### [Syntax]()
 
     hash(data,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
@@ -202,19 +202,19 @@ options|`Object`|
 options.algorithm|`String`|sha256
 options.encoding|`String`|hex
 
-##### [Return value]()
+#### [Return value]()
 
 `String`
 
-### Crypto.hmac()
+## Crypto.hmac()
 
 HMAC
 
-#### [Syntax]()
+### [Syntax]()
 
     hmac(data,options)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
@@ -224,115 +224,115 @@ options.algorithm|`String`|sha256
 options.key|`String`|
 options.encoding|`String`|hex
 
-##### [Return value]()
+#### [Return value]()
 
 `String`
 
-### Crypto.base64Encode()
+## Crypto.base64Encode()
 
 Base64 Encode
 
-#### [Syntax]()
+### [Syntax]()
 
     base64Encode(data)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 data|`String`|
 
-##### [Return value]()
+#### [Return value]()
 
 `String`
 
-### Crypto.base64Decode()
+## Crypto.base64Decode()
 
 Base64 Decode
 
-#### [Syntax]()
+### [Syntax]()
 
     base64Decode(data)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 data|`String`|
 
-##### [Return value]()
+#### [Return value]()
 
 `String`
 
-### Crypto.base64UrlEncode()
+## Crypto.base64UrlEncode()
 
 Base64URL Encode
 
-#### [Syntax]()
+### [Syntax]()
 
     base64UrlEncode(data)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 data|`String`|
 
-##### [Return value]()
+#### [Return value]()
 
 `String`
 
-### Crypto.base64UrlDecode()
+## Crypto.base64UrlDecode()
 
 Base64URL Decode
 
-#### [Syntax]()
+### [Syntax]()
 
     base64UrlDecode(data)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 data|`String`|
 
-##### [Return value]()
+#### [Return value]()
 
 `String`
 
-### Crypto.base32Encode()
+## Crypto.base32Encode()
 
 Base32 Encode
 
-#### [Syntax]()
+### [Syntax]()
 
     base32Encode(data)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 data|`String`|
 
-##### [Return value]()
+#### [Return value]()
 
 `String`
 
-### Crypto.base32Decode()
+## Crypto.base32Decode()
 
 Base32 Decode
 
-#### [Syntax]()
+### [Syntax]()
 
     base32Decode(data)
 
-##### [Parameters]()
+#### [Parameters]()
 
 name|type|defaultvalue
 ---|---|---
 data|`String`|
 
-##### [Return value]()
+#### [Return value]()
 
 `String`
 
