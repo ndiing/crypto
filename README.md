@@ -1,38 +1,79 @@
 # Crypto
 
+<!-- Description -->
+
+
+
+
+
+
 ## [Static methods]()
 
-[`Crypto.encrypt()`]()
+<!-- _Description_ -->
 
-[`Crypto.decrypt()`]()
+[`encrypt()`]()
 
-[`Crypto.privateEncrypt()`]()
+<!-- Description -->
+[`decrypt()`]()
 
-[`Crypto.privateDecrypt()`]()
+<!-- Description -->
+[`privateEncrypt()`]()
 
-[`Crypto.publicEncrypt()`]()
+<!-- Description -->
+[`privateDecrypt()`]()
 
-[`Crypto.publicDecrypt()`]()
+<!-- Description -->
+[`publicEncrypt()`]()
 
-[`Crypto.sign()`]()
+<!-- Description -->
+[`publicDecrypt()`]()
 
-[`Crypto.verify()`]()
+<!-- Description -->
+[`sign()`]()
 
-[`Crypto.hash()`]()
+<!-- Description -->
+[`verify()`]()
 
-[`Crypto.hmac()`]()
+<!-- Description -->
+[`hash()`]()
 
-[`Crypto.base64Encode()`]()
+<!-- Description -->
+[`hmac()`]()
 
-[`Crypto.base64Decode()`]()
+<!-- Description -->
+[`base64Encode()`]()
 
-[`Crypto.base64UrlEncode()`]()
+<!-- Description -->
+[`base64Decode()`]()
 
-[`Crypto.base64UrlDecode()`]()
+<!-- Description -->
+[`base64UrlEncode()`]()
 
-[`Crypto.base32Encode()`]()
+<!-- Description -->
+[`base64UrlDecode()`]()
 
-[`Crypto.base32Decode()`]()
+<!-- Description -->
+[`base32Encode()`]()
+
+<!-- Description -->
+[`base32Decode()`]()
+
+<!-- Description -->
+
+
+<!-- ## [Events]() -->
+<!--  -->
+<!-- Description -->
+<!--  -->
+<!-- [`eventName`]() event -->
+<!--  -->
+<!-- Description -->
+<!--  -->
+<!-- ## [Example]() -->
+<!--  -->
+<!-- ### [Title]() -->
+<!--  -->
+<!-- Description -->
 
 ## [See also]()
 
