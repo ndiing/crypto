@@ -1,343 +1,83 @@
 
 # Crypto
+Todo description...
 
+<!-- examples -->
+## Examples
 
 
+```js
+// encode>decode base32const encoded = Crypto.base32Encode("data");console.log(encoded); //MRQXIYI=const decoded = Crypto.base32Decode(encoded);console.log(decoded); //data
+```
 
+<!-- examples -->
 
-## [Methods]()
+<!-- properties -->
+## Properties
 
-<!-- _Methods._ -->
 
+[`Crypto#base32Alphabet`](./docs/crypto/base32alphabet.md)
+Todo description...
 
-## Crypto.encrypt()
+<!-- properties -->
 
-AES Encryption
+<!-- staticproperties -->
+<!-- staticproperties -->
 
-### [Syntax]()
+<!-- methods -->
+<!-- methods -->
 
-    encrypt(data,options)
+<!-- staticmethods -->
+## Static methods
 
-#### [Parameters]()
 
-name|type|defaultvalue
----|---|---
-data|`String`|
-options|`Object`|
-options.algorithm|`String`|aes256
-options.key|`String`|
-options.iv|`String`|
-options.encoding|`String`|hex
+[`Crypto.encrypt(data,options)`](./docs/crypto/encrypt.md)
+Todo description...
 
-#### [Return value]()
+[`Crypto.decrypt(data,options)`](./docs/crypto/decrypt.md)
+Todo description...
 
-`String`
+[`Crypto.privateEncrypt(data,options)`](./docs/crypto/private-encrypt.md)
+Todo description...
 
-## Crypto.decrypt()
+[`Crypto.privateDecrypt(data,options)`](./docs/crypto/private-decrypt.md)
+Todo description...
 
-AES Decryption
+[`Crypto.publicEncrypt(data,options)`](./docs/crypto/public-encrypt.md)
+Todo description...
 
-### [Syntax]()
+[`Crypto.publicDecrypt(data,options)`](./docs/crypto/public-decrypt.md)
+Todo description...
 
-    decrypt(data,options)
+[`Crypto.sign(data,options)`](./docs/crypto/sign.md)
+Todo description...
 
-#### [Parameters]()
+[`Crypto.verify(data,signature,options)`](./docs/crypto/verify.md)
+Todo description...
 
-name|type|defaultvalue
----|---|---
-data|`String`|
-options|`Object`|
-options.algorithm|`String`|aes256
-options.key|`String`|
-options.iv|`String`|
-options.encoding|`String`|hex
+[`Crypto.hash(data,options)`](./docs/crypto/hash.md)
+Todo description...
 
-#### [Return value]()
+[`Crypto.hmac(data,options)`](./docs/crypto/hmac.md)
+Todo description...
 
-`String`
+[`Crypto.base64Encode(data)`](./docs/crypto/base64encode.md)
+Todo description...
 
-## Crypto.privateEncrypt()
+[`Crypto.base64Decode(data)`](./docs/crypto/base64decode.md)
+Todo description...
 
-RSA Private Encryption
+[`Crypto.base64UrlEncode(data)`](./docs/crypto/base64url-encode.md)
+Todo description...
 
-### [Syntax]()
+[`Crypto.base64UrlDecode(data)`](./docs/crypto/base64url-decode.md)
+Todo description...
 
-    privateEncrypt(data,options)
+[`Crypto.base32Encode(data)`](./docs/crypto/base32encode.md)
+Todo description...
 
-#### [Parameters]()
+[`Crypto.base32Decode(data)`](./docs/crypto/base32decode.md)
+Todo description...
 
-name|type|defaultvalue
----|---|---
-data|`String`|
-options|`Object`|
-options.privateKey|`String`|
-options.encoding|`String`|hex
-
-#### [Return value]()
-
-`String`
-
-## Crypto.privateDecrypt()
-
-RSA Private Decryption
-
-### [Syntax]()
-
-    privateDecrypt(data,options)
-
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-data|`String`|
-options|`Object`|
-options.privateKey|`String`|
-options.encoding|`String`|hex
-
-#### [Return value]()
-
-`String`
-
-## Crypto.publicEncrypt()
-
-RSA Public Encryption
-
-### [Syntax]()
-
-    publicEncrypt(data,options)
-
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-data|`String`|
-options|`Object`|
-options.privateKey|`String`|
-options.encoding|`String`|hex
-
-#### [Return value]()
-
-`String`
-
-## Crypto.publicDecrypt()
-
-RSA Public Decryption
-
-### [Syntax]()
-
-    publicDecrypt(data,options)
-
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-data|`String`|
-options|`Object`|
-options.privateKey|`String`|
-options.encoding|`String`|hex
-
-#### [Return value]()
-
-`String`
-
-## Crypto.sign()
-
-Create Signature
-
-### [Syntax]()
-
-    sign(data,options)
-
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-data|`String`|
-options|`Object`|
-options.algorithm|`String`|sha256
-options.privateKey|`String`|
-options.encoding|`String`|hex
-
-#### [Return value]()
-
-`String`
-
-## Crypto.verify()
-
-Verify Signature
-
-### [Syntax]()
-
-    verify(data,signature,options)
-
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-data|`String`|
-signature|`String`|
-options|`Object`|
-options.algorithm|`String`|sha256
-options.privateKey|`String`|
-options.encoding|`String`|hex
-
-#### [Return value]()
-
-`String`
-
-## Crypto.hash()
-
-HASH
-
-### [Syntax]()
-
-    hash(data,options)
-
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-data|`String`|
-options|`Object`|
-options.algorithm|`String`|sha256
-options.encoding|`String`|hex
-
-#### [Return value]()
-
-`String`
-
-## Crypto.hmac()
-
-HMAC
-
-### [Syntax]()
-
-    hmac(data,options)
-
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-data|`String`|
-options|`Object`|
-options.algorithm|`String`|sha256
-options.key|`String`|
-options.encoding|`String`|hex
-
-#### [Return value]()
-
-`String`
-
-## Crypto.base64Encode()
-
-Base64 Encode
-
-### [Syntax]()
-
-    base64Encode(data)
-
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-data|`String`|
-
-#### [Return value]()
-
-`String`
-
-## Crypto.base64Decode()
-
-Base64 Decode
-
-### [Syntax]()
-
-    base64Decode(data)
-
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-data|`String`|
-
-#### [Return value]()
-
-`String`
-
-## Crypto.base64UrlEncode()
-
-Base64URL Encode
-
-### [Syntax]()
-
-    base64UrlEncode(data)
-
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-data|`String`|
-
-#### [Return value]()
-
-`String`
-
-## Crypto.base64UrlDecode()
-
-Base64URL Decode
-
-### [Syntax]()
-
-    base64UrlDecode(data)
-
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-data|`String`|
-
-#### [Return value]()
-
-`String`
-
-## Crypto.base32Encode()
-
-Base32 Encode
-
-### [Syntax]()
-
-    base32Encode(data)
-
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-data|`String`|
-
-#### [Return value]()
-
-`String`
-
-## Crypto.base32Decode()
-
-Base32 Decode
-
-### [Syntax]()
-
-    base32Decode(data)
-
-#### [Parameters]()
-
-name|type|defaultvalue
----|---|---
-data|`String`|
-
-#### [Return value]()
-
-`String`
-
-# 
-
-
-
+<!-- staticmethods -->
 
