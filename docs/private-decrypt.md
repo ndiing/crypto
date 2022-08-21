@@ -11,12 +11,15 @@
 `data`
 
 `String`: **Default Value** 
+
 `options`
 
 `Object`: **Default Value** 
+
 `options.privateKey`
 
 `String`: **Default Value** 
+
 `options.encoding`
 
 `String`: **Default Value** hex

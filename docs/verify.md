@@ -11,18 +11,23 @@
 `data`
 
 `String`: **Default Value** 
+
 `signature`
 
 `String`: **Default Value** 
+
 `options`
 
 `Object`: **Default Value** 
+
 `options.algorithm`
 
 `String`: **Default Value** sha256
+
 `options.privateKey`
 
 `String`: **Default Value** 
+
 `options.encoding`
 
 `String`: **Default Value** hex

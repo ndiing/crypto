@@ -11,12 +11,15 @@
 `data`
 
 `String`: **Default Value** 
+
 `options`
 
 `Object`: **Default Value** 
+
 `options.algorithm`
 
 `String`: **Default Value** sha256
+
 `options.encoding`
 
 `String`: **Default Value** hex
