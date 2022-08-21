@@ -1,13 +1,11 @@
 const crypto = require("crypto");
 
 /**
- *
+ * Cryptography
  */
 class Crypto {
-    // crypto
-
     /**
-     *
+     * AES Encryption
      * @param {String} data
      * @param {Object} options
      * @param {String} options.algorithm=aes256
@@ -23,7 +21,7 @@ class Crypto {
     }
 
     /**
-     *
+     * AES Decryption
      * @param {String} data
      * @param {Object} options
      * @param {String} options.algorithm=aes256
@@ -39,7 +37,7 @@ class Crypto {
     }
 
     /**
-     *
+     * RSA Private Encryption
      * @param {String} data
      * @param {Object} options
      * @param {String} options.privateKey
@@ -53,7 +51,7 @@ class Crypto {
     }
 
     /**
-     *
+     * RSA Private Decryption
      * @param {String} data
      * @param {Object} options
      * @param {String} options.privateKey
@@ -67,7 +65,7 @@ class Crypto {
     }
 
     /**
-     *
+     * RSA Public Encryption
      * @param {String} data
      * @param {Object} options
      * @param {String} options.privateKey
@@ -81,7 +79,7 @@ class Crypto {
     }
 
     /**
-     *
+     * RSA Public Decryption
      * @param {String} data
      * @param {Object} options
      * @param {String} options.privateKey
@@ -95,7 +93,7 @@ class Crypto {
     }
 
     /**
-     *
+     * Create Signature
      * @param {String} data
      * @param {Object} options
      * @param {String} options.algorithm=sha256
@@ -112,7 +110,7 @@ class Crypto {
     }
 
     /**
-     *
+     * Verify Signature
      * @param {String} data
      * @param {String} signature
      * @param {Object} options
@@ -130,7 +128,7 @@ class Crypto {
     }
 
     /**
-     *
+     * HASH
      * @param {String} data
      * @param {Object} options
      * @param {String} options.algorithm=sha256
@@ -143,7 +141,7 @@ class Crypto {
     }
 
     /**
-     *
+     * HMAC
      * @param {String} data
      * @param {Object} options
      * @param {String} options.algorithm=sha256
@@ -156,9 +154,8 @@ class Crypto {
         return crypto.createHmac(algorithm, key).update(data).digest(encoding);
     }
 
-    // base64
     /**
-     *
+     * Base64 Encode
      * @param {String} data
      * @returns {String}
      */
@@ -167,7 +164,7 @@ class Crypto {
     }
 
     /**
-     *
+     * Base64 Decode
      * @param {String} data
      * @returns {String}
      */
@@ -175,9 +172,8 @@ class Crypto {
         return Buffer.from(data, "base64").toString();
     }
 
-    // base64Url
     /**
-     *
+     * Base64URL Encode
      * @param {String} data
      * @returns {String}
      */
@@ -186,7 +182,7 @@ class Crypto {
     }
 
     /**
-     *
+     * Base64URL Decode
      * @param {String} data
      * @returns {String}
      */
@@ -194,12 +190,11 @@ class Crypto {
         return Buffer.from(data, "base64Url").toString();
     }
 
-    // base32
     // https://www.rfc-editor.org/rfc/rfc4648
     static base32Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567";
 
     /**
-     *
+     * Base32 Encode
      * @param {String} data
      * @returns {String}
      */
@@ -234,7 +229,7 @@ class Crypto {
     }
 
     /**
-     *
+     * Base32 Decode
      * @param {String} data
      * @returns {String}
      */
