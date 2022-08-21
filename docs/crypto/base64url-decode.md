@@ -11,6 +11,10 @@ base64UrlDecode(data);
 ```
 
 <!-- parameters -->
+### Parameters
+
+- `data`
+
 <!-- parameters -->
 
 <!-- return -->

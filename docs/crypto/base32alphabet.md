@@ -11,6 +11,8 @@ base32Alphabet();
 ```
 
 <!-- parameters -->
+### Parameters
+
 <!-- parameters -->
 
 <!-- return -->

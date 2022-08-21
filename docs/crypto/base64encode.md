@@ -11,6 +11,10 @@ base64Encode(data);
 ```
 
 <!-- parameters -->
+### Parameters
+
+- `data`
+
 <!-- parameters -->
 
 <!-- return -->
