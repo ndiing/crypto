@@ -14,9 +14,7 @@ hmac(data,options);
 ### Parameters
 
 - `data`
-
 - `options`
-
 <!-- parameters -->
 
 <!-- return -->

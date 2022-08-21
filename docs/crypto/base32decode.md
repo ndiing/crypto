@@ -20,7 +20,6 @@ base32Decode(data);
 ### Parameters
 
 - `data` String - encoded base32 data
-
 <!-- parameters -->
 
 <!-- return -->

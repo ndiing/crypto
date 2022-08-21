@@ -14,7 +14,6 @@ base64Decode(data);
 ### Parameters
 
 - `data`
-
 <!-- parameters -->
 
 <!-- return -->
