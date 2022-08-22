@@ -4,25 +4,6 @@
 npm install @ndiinginc/crypto
 ```
 
-## Global
-
-<!-- constructor -->
-<!-- constructor -->
-
-<!-- properties -->
-<!-- properties -->
-
-<!-- staticproperties -->
-<!-- staticproperties -->
-
-<!-- methods -->
-<!-- methods -->
-
-<!-- staticmethods -->
-<!-- staticmethods -->
-
-<!-- examples -->
-<!-- examples -->
 ## Crypto
 _Todo description..._
 
