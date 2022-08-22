@@ -6,6 +6,9 @@ npm install @ndiinginc/crypto
 
 ## Global
 
+<!-- constructor -->
+<!-- constructor -->
+
 <!-- properties -->
 <!-- properties -->
 
@@ -22,6 +25,9 @@ npm install @ndiinginc/crypto
 <!-- examples -->
 ## Crypto
 _Todo description..._
+
+<!-- constructor -->
+<!-- constructor -->
 
 <!-- properties -->
 ### Properties
