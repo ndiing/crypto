@@ -17,3 +17,6 @@ base32Alphabet()
 </dl>
 
 
+### See also
+- [https://www.rfc-editor.org/rfc/rfc4648](https://www.rfc-editor.org/rfc/rfc4648)
+
