@@ -1,21 +1,21 @@
-# Crypto.publicDecrypt()
-Todo description...
+## Crypto.publicDecrypt()
+_Todo description..._
 
-<!-- examples -->
-<!-- examples -->
-
-## Syntax
-
-```js
-publicDecrypt(data,options);
+### Syntax
+```
+publicDecrypt(data,options)
 ```
 
-<!-- parameters -->
 ### Parameters
+<dl>
+    <dt><code>data</code></dt>
+    <dt><code>options</code></dt>
+</dl>
 
-- `data`
-- `options`
-<!-- parameters -->
+### Return value
 
-<!-- return -->
-<!-- return -->
+<dl>
+    <dt>None <code>undefined</code></dt>
+</dl>
+
+

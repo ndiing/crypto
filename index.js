@@ -132,7 +132,7 @@ class Crypto {
 
     /**
      * Todo description...
-     * @see {@link https://www.rfc-editor.org/rfc/rfc4648}
+     * @see https://www.rfc-editor.org/rfc/rfc4648
      */
     static base32Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567";
 

@@ -1,19 +1,19 @@
-# Crypto#base32Alphabet()
-Todo description...
+## Crypto#base32Alphabet()
+_Todo description..._
 
-<!-- examples -->
-<!-- examples -->
-
-## Syntax
-
-```js
-base32Alphabet();
+### Syntax
+```
+base32Alphabet()
 ```
 
-<!-- parameters -->
 ### Parameters
+<dl>
+</dl>
 
-<!-- parameters -->
+### Return value
 
-<!-- return -->
-<!-- return -->
+<dl>
+    <dt>None <code>undefined</code></dt>
+</dl>
+
+

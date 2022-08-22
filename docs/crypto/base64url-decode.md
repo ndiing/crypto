@@ -1,20 +1,20 @@
-# Crypto.base64UrlDecode()
-Todo description...
+## Crypto.base64UrlDecode()
+_Todo description..._
 
-<!-- examples -->
-<!-- examples -->
-
-## Syntax
-
-```js
-base64UrlDecode(data);
+### Syntax
+```
+base64UrlDecode(data)
 ```
 
-<!-- parameters -->
 ### Parameters
+<dl>
+    <dt><code>data</code></dt>
+</dl>
 
-- `data`
-<!-- parameters -->
+### Return value
 
-<!-- return -->
-<!-- return -->
+<dl>
+    <dt>None <code>undefined</code></dt>
+</dl>
+
+

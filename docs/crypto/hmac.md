@@ -1,21 +1,21 @@
-# Crypto.hmac()
-Todo description...
+## Crypto.hmac()
+_Todo description..._
 
-<!-- examples -->
-<!-- examples -->
-
-## Syntax
-
-```js
-hmac(data,options);
+### Syntax
+```
+hmac(data,options)
 ```
 
-<!-- parameters -->
 ### Parameters
+<dl>
+    <dt><code>data</code></dt>
+    <dt><code>options</code></dt>
+</dl>
 
-- `data`
-- `options`
-<!-- parameters -->
+### Return value
 
-<!-- return -->
-<!-- return -->
+<dl>
+    <dt>None <code>undefined</code></dt>
+</dl>
+
+

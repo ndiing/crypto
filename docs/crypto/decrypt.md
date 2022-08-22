@@ -1,21 +1,21 @@
-# Crypto.decrypt()
-Todo description...
+## Crypto.decrypt()
+_Todo description..._
 
-<!-- examples -->
-<!-- examples -->
-
-## Syntax
-
-```js
-decrypt(data,options);
+### Syntax
+```
+decrypt(data,options)
 ```
 
-<!-- parameters -->
 ### Parameters
+<dl>
+    <dt><code>data</code></dt>
+    <dt><code>options</code></dt>
+</dl>
 
-- `data`
-- `options`
-<!-- parameters -->
+### Return value
 
-<!-- return -->
-<!-- return -->
+<dl>
+    <dt>None <code>undefined</code></dt>
+</dl>
+
+

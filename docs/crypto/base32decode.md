@@ -1,30 +1,26 @@
-# Crypto.base32Decode()
-Todo description...
+## Crypto.base32Decode()
+_Todo description..._
 
-<!-- examples -->
-## Examples
+### Syntax
+```
+base32Decode(data)
+```
 
-```js
+### Parameters
+<dl>
+    <dt><code>data</code></dt>
+    <dd>A <code>String</code> encoded base32 data, The default is <code></code></dd>
+</dl>
+
+### Return value
+
+<dl>
+    <dt>A <code>String</code></dt>
+</dl>
+
+### Examples
+```
 // encode>decode base32const encoded = Crypto.base32Encode("data");console.log(encoded); //MRQXIYI=const decoded = Crypto.base32Decode(encoded);console.log(decoded); //data
 ```
 
-<!-- examples -->
 
-## Syntax
-
-```js
-base32Decode(data);
-```
-
-<!-- parameters -->
-### Parameters
-
-- `data=` String encoded base32 data
-<!-- parameters -->
-
-<!-- return -->
-### Return value
-
-- `String`
-
-<!-- return -->
