@@ -9,7 +9,7 @@ base32Encode(data)
 ### Parameters
 <dl>
     <dt><code>data</code></dt>
-    <dd>A <code>String</code> data to be encoded to base32, The default is <code></code></dd>
+    <dd>A <code>String</code> data to be encoded to base32</dd>
 </dl>
 
 ### Return value
