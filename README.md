@@ -4,6 +4,15 @@
 npm install @ndiinginc/crypto
 ```
 
+
+<!-- examples -->
+### Examples
+```js
+// encode>decode base32const encoded = Crypto.base32Encode("data");console.log(encoded); //MRQXIYI=const decoded = Crypto.base32Decode(encoded);console.log(decoded); //data
+```
+
+<!-- examples -->
+
 ## Crypto
 _Todo description..._
 
@@ -61,11 +70,3 @@ _Todo description..._
     <dd>Todo description...</dd>
 </dl>
 <!-- staticmethods -->
-
-<!-- examples -->
-### Examples
-```
-// encode>decode base32const encoded = Crypto.base32Encode("data");console.log(encoded); //MRQXIYI=const decoded = Crypto.base32Decode(encoded);console.log(decoded); //data
-```
-
-<!-- examples -->

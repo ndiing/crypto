@@ -16,7 +16,7 @@ Crypto()
 </dl>
 
 ### Examples
-```
+```js
 // encode>decode base32const encoded = Crypto.base32Encode("data");console.log(encoded); //MRQXIYI=const decoded = Crypto.base32Decode(encoded);console.log(decoded); //data
 ```
 
