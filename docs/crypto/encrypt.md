@@ -1,5 +1,4 @@
 ## Crypto.encrypt()
-_Todo description..._
 
 ### Syntax
 ```
@@ -9,13 +8,15 @@ encrypt(data,options)
 ### Parameters
 <dl>
     <dt><code>data</code></dt>
+    <dd>A <code>String</code> -</dd>
     <dt><code>options</code></dt>
+    <dd>A <code>Object</code> -</dd>
 </dl>
 
 ### Return value
 
 <dl>
-    <dt>None <code>undefined</code></dt>
+    <dt>A <code>String</code></dt>
 </dl>
 
 

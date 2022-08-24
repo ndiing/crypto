@@ -11,7 +11,10 @@ const crypto = require("crypto");
  */
 class Crypto {
     /**
-     * Todo description...
+     * 
+     * @param {String} data - 
+     * @param {Object} options -
+     * @returns {String}
      */
     static encrypt(data, options = {}) {
         const { algorithm = "aes256", key = "", iv = "", encoding = "hex" } = options;
@@ -20,7 +23,10 @@ class Crypto {
     }
 
     /**
-     * Todo description...
+     * 
+     * @param {String} data - 
+     * @param {Object} options -
+     * @returns {String}
      */
     static decrypt(data, options = {}) {
         const { algorithm = "aes256", key = "", iv = "", encoding = "hex" } = options;
