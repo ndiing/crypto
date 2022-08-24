@@ -28,9 +28,9 @@ _Todo description..._
 ### Static Methods
 <dl>
     <dt><code><a href="./docs/crypto/encrypt.md">Crypto.encrypt()</a></code></dt>
-    <dd></dd>
+    <dd>AES Encryption</dd>
     <dt><code><a href="./docs/crypto/decrypt.md">Crypto.decrypt()</a></code></dt>
-    <dd></dd>
+    <dd>AES Decryption</dd>
     <dt><code><a href="./docs/crypto/private-encrypt.md">Crypto.privateEncrypt()</a></code></dt>
     <dd>Todo description...</dd>
     <dt><code><a href="./docs/crypto/private-decrypt.md">Crypto.privateDecrypt()</a></code></dt>

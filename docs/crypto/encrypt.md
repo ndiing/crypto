@@ -1,4 +1,5 @@
 ## Crypto.encrypt()
+_AES Encryption_
 
 ### Syntax
 ```

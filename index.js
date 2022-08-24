@@ -11,7 +11,7 @@ const crypto = require("crypto");
  */
 class Crypto {
     /**
-     * 
+     * AES Encryption
      * @param {String} data - 
      * @param {Object} options -
      * @returns {String}
@@ -23,7 +23,7 @@ class Crypto {
     }
 
     /**
-     * 
+     * AES Decryption
      * @param {String} data - 
      * @param {Object} options -
      * @returns {String}
