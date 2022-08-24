@@ -14,6 +14,10 @@ class Crypto {
      * AES Encryption
      * @param {String} data - 
      * @param {Object} options -
+     * @param {String} options.algorithm=aes256 -
+     * @param {String} options.key -
+     * @param {String} options.iv -
+     * @param {String} options.encoding=hex -
      * @returns {String}
      */
     static encrypt(data, options = {}) {
@@ -26,6 +30,10 @@ class Crypto {
      * AES Decryption
      * @param {String} data - 
      * @param {Object} options -
+     * @param {String} options.algorithm=aes256 -
+     * @param {String} options.key -
+     * @param {String} options.iv -
+     * @param {String} options.encoding=hex -
      * @returns {String}
      */
     static decrypt(data, options = {}) {
