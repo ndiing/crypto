@@ -12,12 +12,12 @@ const crypto = require("crypto");
 class Crypto {
     /**
      * AES Encryption
-     * @param {String} data - 
-     * @param {Object} options -
-     * @param {String} options.algorithm=aes256 -
-     * @param {String} options.key -
-     * @param {String} options.iv -
-     * @param {String} options.encoding=hex -
+     * @param {String} data - string to be encoded
+     * @param {Object} options - possible property are:
+     * @param {String} options.algorithm=aes256 - set algorithm
+     * @param {String} options.key - set key value
+     * @param {String} options.iv - set iv value
+     * @param {String} options.encoding=hex - set output encoding
      * @returns {String}
      */
     static encrypt(data, options = {}) {
@@ -28,12 +28,12 @@ class Crypto {
 
     /**
      * AES Decryption
-     * @param {String} data - 
-     * @param {Object} options -
-     * @param {String} options.algorithm=aes256 -
-     * @param {String} options.key -
-     * @param {String} options.iv -
-     * @param {String} options.encoding=hex -
+     * @param {String} data - encoded string
+     * @param {Object} options - possible property are:
+     * @param {String} options.algorithm=aes256 - set algorithm
+     * @param {String} options.key - set key value
+     * @param {String} options.iv - set iv value
+     * @param {String} options.encoding=hex - set input encoding
      * @returns {String}
      */
     static decrypt(data, options = {}) {
