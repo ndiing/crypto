@@ -7,18 +7,6 @@ npm install @ndiinginc/crypto
 ```
 
 ### Index
-- Global
-
-    <!-- properties -->
-    <!-- properties -->
-    <!-- staticproperties -->
-    <!-- staticproperties -->
-    <!-- methods -->
-    <!-- methods -->
-    <!-- staticmethods -->
-    <!-- staticmethods -->
-    <!-- events -->
-    <!-- events -->
 - Crypto
 
     <!-- properties -->
@@ -50,33 +38,6 @@ npm install @ndiinginc/crypto
     <!-- staticmethods -->
     <!-- events -->
     <!-- events -->
-
-# Global
-<!--  -->
-
-
-<!-- examples -->
-<!-- examples -->
-
-
-<!-- constructor -->
-### Constructor
-
-<div><a href="./docs/.md" name=""><code>()</code></a></div>
-
-
-<!-- constructor -->
-
-<!-- properties -->
-<!-- properties -->
-<!-- staticproperties -->
-<!-- staticproperties -->
-<!-- methods -->
-<!-- methods -->
-<!-- staticmethods -->
-<!-- staticmethods -->
-<!-- events -->
-<!-- events -->
 
 # Crypto
 <!--  -->
